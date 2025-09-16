@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Controladora.GrupoActivity"
+    android:orientation="vertical"
+    android:background="@drawable/caba14">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="15dp">
+
+            <TextView
+                android:id="@+id/textView_grupo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Grupo"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="@color/rojo_oscuro"
+                android:padding="10dp"/>
+
+            <TextView
+                android:id="@+id/textView_id_grupo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Id Grupo"
+                android:textAlignment="center"
+                android:textColor="@color/naranja"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout_id_grupo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/txtid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:hint="Id Grupo"
+                    android:inputType="number"
+                    android:textAlignment="center"
+                    android:textColorHint="@color/gray_claro"
+                    android:textColor="@color/gray"
+                    android:backgroundTint="@color/naranja"
+                    android:padding="10dp"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:background="@drawable/border"/>
+
+                <Button
+                    android:id="@+id/btnbus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Buscar"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:padding="8dp"
+                    android:background="@drawable/borderbutton"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView_nombre_grupo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nombre del Grupo"
+                android:textAlignment="center"
+                android:textColor="@color/naranja"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout_nombre_grupo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/txtnom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:hint="Grupo"
+                    android:inputType="text"
+                    android:textAlignment="center"
+                    android:textColorHint="@color/gray_claro"
+                    android:textColor="@color/gray"
+                    android:backgroundTint="@color/naranja"
+                    android:padding="10dp"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:background="@drawable/border"/>
+
+                <Button
+                    android:id="@+id/btnbusNom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Buscar"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:padding="8dp"
+                    android:background="@drawable/borderbutton"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView_Permisos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Permisos"
+                android:textAlignment="center"
+                android:textColor="@color/naranja"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="3dp">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="235dp"
+                    android:layout_height="38dp"
+                    android:textAlignment="center"
+                    app:cardBackgroundColor="#D3FDFDFD"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="@dimen/cardview_default_radius">
+
+                    <Spinner
+                        android:id="@+id/spinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:backgroundTint="@color/naranja"
+                        android:fadeScrollbars="true"
+                        android:textAlignment="center" />
+                </androidx.cardview.widget.CardView>
+
+                <EditText
+                    android:id="@+id/txtPermiso"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:backgroundTint="#19FFFFFF"
+                    android:ems="20"
+                    android:inputType="text"
+                    android:textAlignment="center"
+                    android:textColorHint="@color/gray_claro"
+                    android:textColor="@color/gray"
+                    android:padding="10dp"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:background="@drawable/border" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_Layout_botones"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp">
+
+                <Button
+                    android:id="@+id/btnmod"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/borderbutton"
+                    android:layout_weight="1"
+                    android:backgroundTint="#819886FC"
+                    android:text="Modificar" />
+
+                <Button
+                    android:id="@+id/btnreg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/borderbutton"
+                    android:layout_weight="1"
+                    android:backgroundTint="#7E50E056"
+                    android:text="Registrar" />
+
+                <Button
+                    android:id="@+id/btneli"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/borderbutton"
+                    android:backgroundTint="#62FF1A1A"
+                    android:layout_weight="1"
+                    android:text="Eliminar" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Listado de grupos"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="#D08C0202"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:background="#6EFF5722"
+                        android:textColor="@color/white"
+                        android:text="  IdGrupo          Nombre                Permiso  "
+                        android:textSize="16sp"
+                        android:textStyle="bold|italic" />
+                    <ListView
+                        android:id="@+id/lvDatos"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:divider="@android:color/white"
+                        android:dividerHeight="1dp"
+                        android:padding="8dp"
+                        android:layout_margin="8dp"
+                        android:scrollbars="vertical"/>
+                </LinearLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

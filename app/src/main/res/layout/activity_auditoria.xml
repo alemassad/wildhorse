@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@drawable/caballo3"
+    tools:context=".Controladora.AuditoriaActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Campo de búsqueda por usuario -->
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="26sp"
+            android:textAlignment="center"
+            android:textColor="@color/naranja"
+            android:textStyle="bold"
+            android:text="AUDITORIA" />
+
+        <EditText
+            android:id="@+id/editTextUsuario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/naranja"
+            android:textColor="@color/naranja"
+            android:hint="Buscar por usuario" />
+
+        <!-- Campo de búsqueda por fecha -->
+        <EditText
+            android:id="@+id/editTextFecha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/naranja"
+
+            android:textColor="@color/naranja"
+            android:hint="Buscar por fecha (dd/MM/yyyy)" />
+
+        <!-- Botón de búsqueda -->
+        <Button
+            android:id="@+id/btnBuscar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/borderbutton"
+            android:text="Buscar" />
+
+        <!-- RecyclerView para mostrar los resultados -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewAuditoria"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:backgroundTint="#61FF9800"
+            android:background="@drawable/border"
+            android:layout_marginTop="16dp" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

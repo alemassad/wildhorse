@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gaucho2"
+    tools:context=".Sesion.UpdateProfileActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:background="@color/transparente">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView_update_perfil_cabecera"
+            android:textAlignment="center"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:textColor="@color/rojo_oscuro"
+            android:text="Actualiza tu perfil"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView_update_perfil_dni"
+            android:text="Dni"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/naranja"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_below="@+id/textView_update_perfil_cabecera"
+            android:layout_marginStart="45dp"/>
+
+        <ImageView
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:id="@+id/imgView_email"
+            android:layout_below="@id/textView_update_perfil_dni"
+            android:background="@drawable/ic_dni_registro"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edit_update_perfil_dni"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:textColorHint="@color/gray_claro"
+            android:textColor="@color/gray"
+            android:backgroundTint="@color/naranja"
+            android:padding="5dp"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:background="@drawable/border"
+            android:hint="Ingrese su Dni"
+            android:layout_below="@+id/textView_update_perfil_dni"
+            android:layout_marginStart="45dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView_update_perfil_nombre"
+            android:text="Nombre"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/naranja"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_below="@+id/edit_update_perfil_dni"
+            android:layout_marginStart="45dp"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edit_update_perfil_nombre"
+            android:background="@drawable/border"
+            android:inputType="textPersonName"
+            android:textAlignment="center"
+            android:textColorHint="@color/gray_claro"
+            android:textColor="@color/gray"
+            android:backgroundTint="@color/naranja"
+            android:padding="5dp"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:hint="Ingrese su nombre"
+            android:layout_below="@+id/textView_update_perfil_nombre"
+            android:layout_marginStart="45dp"/>
+
+        <ImageView
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:id="@+id/imgView_nombre"
+            android:layout_below="@id/textView_update_perfil_nombre"
+            android:background="@drawable/ic_name_register"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView_update_perfil_ape"
+            android:text="Apellido"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/naranja"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_below="@+id/edit_update_perfil_nombre"
+            android:layout_marginStart="45dp"/>
+
+        <ImageView
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:id="@+id/imgView_apellido"
+            android:layout_below="@id/textView_update_perfil_ape"
+            android:background="@drawable/ic_subname_register"
+            android:layout_marginTop="3dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edit_update_perfil_ape"
+            android:background="@drawable/border"
+            android:inputType="textPersonName"
+            android:textAlignment="center"
+            android:textColorHint="@color/gray_claro"
+            android:textColor="@color/gray"
+            android:backgroundTint="@color/naranja"
+            android:padding="5dp"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:hint="Ingrese su Apellido"
+            android:layout_below="@+id/textView_update_perfil_ape"
+            android:layout_marginStart="45dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView_update_perfil_tel"
+            android:text="Telefono"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/naranja"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_below="@+id/edit_update_perfil_ape"
+            android:layout_marginStart="45dp"/>
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:id="@+id/imgView_tel"
+            android:backgroundTint="@color/rojo"
+            android:layout_below="@id/textView_update_perfil_tel"
+            android:background="@drawable/ic_phone_register"
+            android:layout_marginTop="6dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edit_update_perfil_tel"
+            android:background="@drawable/border"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:textColorHint="@color/gray_claro"
+            android:textColor="@color/gray"
+            android:backgroundTint="@color/naranja"
+            android:padding="5dp"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:hint="Ingrese su Telefono"
+            android:layout_below="@+id/textView_update_perfil_tel"
+            android:layout_marginStart="45dp"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/botton_upload_perfil_foto"
+            android:text="Actualizar foto perfil"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="70dp"
+            android:layout_marginLeft="70dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textStyle="bold"
+            android:textColor="@color/naranja_oscuro"
+            android:background="@drawable/border"
+            android:textSize="16dp"
+            android:layout_below="@id/edit_update_perfil_tel" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/botton_upload_perfil_mail"
+            android:text="Actualizar Email"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="70dp"
+            android:layout_marginLeft="70dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textColor="@color/naranja_oscuro"
+            android:background="@drawable/border"
+            android:textStyle="bold"
+            android:textSize="16dp"
+            android:layout_below="@+id/botton_upload_perfil_foto" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/botton_upload_perfil"
+            android:text="Actualizar Perfil"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="70dp"
+            android:layout_marginLeft="70dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textColor="@color/naranja_oscuro"
+            android:background="@drawable/border"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_below="@+id/botton_upload_perfil_mail" />
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:elevation="10dp"
+            android:visibility="gone"/>
+    </RelativeLayout>
+
+
+</ScrollView>

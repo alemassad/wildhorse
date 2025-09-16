@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/caba2"
+    tools:context=".Sesion.RegisterActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView_register_head"
+            android:text="REGISTRO"
+            android:textSize="32dp"
+            android:textStyle="bold"
+            android:textColor="@color/naranja"
+            android:layout_marginTop="5dp"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView_register_dni"
+            android:layout_marginTop="25dp"
+            android:layout_below="@id/textView_register_head"
+            android:text="Dni"
+            android:textColor="@color/naranja_claro"
+            android:textStyle="bold"
+            android:textSize="22dp"
+            android:layout_marginStart="45dp"/>
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/imgView_dni"
+            android:layout_below="@id/textView_register_dni"
+            android:background="@drawable/ic_dni_registro"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_register_dni"
+            android:inputType="number"
+            android:maxLength="10"
+            android:hint="Ingrese su Dni"
+            android:textColorHint="@color/naranja_oscuro"
+            android:textColor="@color/naranja_oscuro"
+            android:backgroundTint="@color/naranja_oscuro"
+            android:padding="11dp"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:layout_below="@id/textView_register_dni"
+            android:background="@drawable/border"
+            android:layout_marginStart="45dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView_register_fullname"
+            android:layout_below="@id/txt_register_dni"
+            android:layout_marginTop="10dp"
+            android:text="Nombre"
+            android:textColor="@color/naranja_claro"
+            android:textStyle="bold"
+            android:textSize="22dp"
+            android:layout_marginStart="45dp"/>
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/imgView_nombre"
+            android:layout_below="@id/textView_register_fullname"
+            android:background="@drawable/ic_name_register"
+            android:layout_marginTop="5dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_register_fullname"
+            android:inputType="textPersonName"
+            android:hint="Ingrese su Nombre"
+            android:textColorHint="@color/naranja_oscuro"
+            android:textColor="@color/naranja_oscuro"
+            android:backgroundTint="@color/naranja_oscuro"
+            android:padding="11dp"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:layout_below="@id/textView_register_fullname"
+            android:background="@drawable/border"
+            android:layout_marginStart="45dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView_register_subname"
+            android:layout_below="@id/txt_register_fullname"
+            android:layout_marginTop="10dp"
+            android:text="Apellido"
+            android:textColor="@color/naranja_claro"
+            android:textStyle="bold"
+            android:textSize="22dp"
+            android:layout_marginStart="45dp"/>
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/imgView_apellido"
+            android:layout_below="@id/textView_register_subname"
+            android:background="@drawable/ic_subname_register"
+            android:layout_marginTop="5dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_register_subname"
+            android:inputType="textPersonName"
+            android:hint="Ingrese su Apellido"
+            android:textColorHint="@color/naranja_oscuro"
+            android:textColor="@color/naranja_oscuro"
+            android:backgroundTint="@color/naranja_oscuro"
+            android:padding="11dp"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:layout_below="@id/textView_register_subname"
+            android:background="@drawable/border"
+            android:layout_marginStart="45dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView_register_email"
+            android:layout_below="@id/txt_register_subname"
+            android:layout_marginTop="10dp"
+            android:text="Email"
+            android:textColor="@color/naranja_claro"
+            android:textStyle="bold"
+            android:textSize="22dp"
+            android:layout_marginStart="45dp"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_register_email"
+            android:inputType="textEmailAddress"
+            android:hint="Ingrese su Mail"
+            android:textColorHint="@color/naranja_oscuro"
+            android:textColor="@color/naranja_oscuro"
+            android:backgroundTint="@color/naranja_oscuro"
+            android:padding="11dp"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:layout_below="@id/textView_register_email"
+            android:background="@drawable/border"
+            android:layout_marginStart="45dp" />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/imgView_email"
+            android:layout_below="@id/textView_register_email"
+            android:background="@drawable/ic_email_register"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView_register_tel"
+            android:layout_below="@id/txt_register_email"
+            android:layout_marginTop="10dp"
+            android:text="Telefono"
+            android:textColor="@color/naranja_claro"
+            android:textStyle="bold"
+            android:textSize="22dp"
+            android:layout_marginStart="45dp"/>
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:id="@+id/imgView_tel"
+            android:layout_below="@id/textView_register_tel"
+            android:background="@drawable/ic_phone_register"
+            android:backgroundTint="@color/naranja_oscuro"
+            android:layout_marginTop="8dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_register_tel"
+            android:inputType="textEmailAddress"
+            android:hint="Ingrese su Telefono"
+            android:textColorHint="@color/naranja_oscuro"
+            android:textColor="@color/naranja_oscuro"
+            android:backgroundTint="@color/naranja_oscuro"
+            android:padding="11dp"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:layout_below="@id/textView_register_tel"
+            android:background="@drawable/border"
+            android:layout_marginStart="45dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView_register_password"
+            android:layout_below="@id/txt_register_tel"
+            android:text="Contraseña"
+            android:textColor="@color/naranja_claro"
+            android:textStyle="bold"
+            android:textSize="22dp"
+            android:layout_marginStart="45dp"
+            android:layout_marginTop="20dp"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_register_password"
+            android:inputType="textPassword"
+            android:hint="Ingrese su Contraseña"
+            android:textColorHint="@color/naranja_oscuro"
+            android:textColor="@color/naranja_oscuro"
+            android:backgroundTint="@color/naranja_oscuro"
+            android:padding="11dp"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:layout_below="@id/textView_register_password"
+            android:background="@drawable/border"
+            android:layout_marginStart="45dp" />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/imgView_ver_pass"
+            android:background="@drawable/ic_hide_pwd"
+
+            android:backgroundTint="@color/naranja_oscuro"
+            android:layout_below="@id/textView_register_password"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView_register_repassword"
+            android:layout_below="@id/txt_register_password"
+            android:layout_marginTop="10dp"
+            android:text="Repita la contraseña"
+            android:textColor="@color/naranja_claro"
+            android:textStyle="bold"
+            android:textSize="22dp"
+            android:layout_marginStart="45dp"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_register_repassword"
+            android:inputType="textPassword"
+            android:hint="Repita su Contraseña"
+            android:textColorHint="@color/naranja_oscuro"
+            android:textColor="@color/naranja_oscuro"
+            android:backgroundTint="@color/naranja_oscuro"
+            android:padding="11dp"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:layout_below="@id/textView_register_repassword"
+            android:background="@drawable/border"
+            android:layout_marginStart="45dp" />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/imgView_ver_repass"
+            android:background="@drawable/ic_hide_pwd"
+
+            android:backgroundTint="@color/naranja_oscuro"
+            android:layout_below="@id/textView_register_repassword"
+            android:layout_marginTop="5dp"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnRegister"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="70dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="Registrar"
+            android:textColor="@color/verde_claro"
+            android:background="@drawable/border"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:layout_below="@id/txt_register_repassword" />
+
+        <ProgressBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/progressBar"
+            android:layout_centerHorizontal="true"
+            android:elevation="10dp"
+            android:visibility="gone"
+            android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+
+</ScrollView>

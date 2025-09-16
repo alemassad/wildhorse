@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/swipeContainer">
+
+<ScrollView
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Sesion.UserProfileActivity"
+    android:background="@drawable/caballo7">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="400dp">
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:id="@+id/imgView_perfil"
+                android:layout_centerInParent="true"
+                android:background="@drawable/fondoperfil"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView_vienvenido"
+                android:layout_below="@id/imgView_perfil"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                android:textColor="@color/white"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="15dp"
+            android:background="#3AFFFFFF">
+
+
+            <!--Muestra nombre -->
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:id="@+id/ic_perfil"
+
+                android:backgroundTint="@color/naranja"
+                android:background="@drawable/ic_profile"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView_mostrar_nombre"
+                android:layout_alignStart="@id/ic_perfil"
+                android:hint="Loading"
+                android:textColorHint="@color/naranja"
+                android:layout_marginStart="50dp"
+                android:textSize="18sp"
+                android:textColor="@color/naranja_claro"
+                android:textStyle="bold"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:id="@+id/divide_nombre"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/textView_mostrar_nombre"
+                android:background="@color/verdeOscuro"/>
+
+
+            <!--Muestra apellido -->
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:id="@+id/ic_apellido"
+                android:background="@drawable/ic_apellido"
+
+                android:layout_below="@+id/divide_nombre"
+                android:layout_marginTop="20dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView_mostrar_apellido"
+                android:layout_alignStart="@id/ic_apellido"
+                android:hint="Loading"
+                android:textColorHint="@color/naranja"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/divide_nombre"
+                android:textSize="18sp"
+                android:textColor="@color/naranja"
+                android:textStyle="bold"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:id="@+id/divide_apellido"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/textView_mostrar_apellido"
+                android:background="@color/verdeOscuro"/>
+
+            <!--Muestra email -->
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:id="@+id/ic_email"
+                android:background="@drawable/ic_email"
+                android:backgroundTint="@color/naranja"
+                android:layout_below="@+id/divide_apellido"
+                android:layout_marginTop="20dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView_mostrar_email"
+                android:layout_alignStart="@id/ic_email"
+                android:hint="Loading"
+                android:textColorHint="@color/naranja"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/divide_apellido"
+                android:textSize="18sp"
+                android:textColor="@color/naranja"
+                android:textStyle="bold"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:id="@+id/divide_email"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/textView_mostrar_email"
+                android:background="@color/verdeOscuro"/>
+
+            <!--Muestra telefono -->
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:id="@+id/ic_telefono"
+                android:background="@drawable/ic_mobile"
+                android:backgroundTint="@color/naranja"
+                android:layout_below="@+id/divide_email"
+                android:layout_marginTop="20dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView_mostrar_telefono"
+                android:layout_alignStart="@+id/ic_telefono"
+                android:hint="Loading"
+                android:textColorHint="@color/naranja"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/divide_email"
+                android:textSize="18sp"
+                android:textColor="@color/naranja"
+                android:textStyle="bold"/>
+
+
+
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/progressBar"
+                style="?android:attr/progressBarStyleLarge"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:elevation="10dp"
+                android:visibility="gone"/>
+
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+
+
+</ScrollView>
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

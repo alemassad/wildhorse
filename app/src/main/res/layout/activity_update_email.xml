@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/caba5"
+    tools:context=".Sesion.UpdateEmailActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:id="@+id/RL_email"
+            android:background="@color/transparente">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView_Up_email_head"
+                android:text="Actualiza tu Email"
+                android:textAlignment="center"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:textColor="@color/rojo"
+                android:textAppearance="@style/TextAppearance.AppCompat.Headline"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView_up_email"
+                android:text="Email Actual"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/naranja_claro"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_below="@id/textView_Up_email_head"
+                android:layout_marginStart="45dp"/>
+
+            <ImageView
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:id="@+id/imgView_email_actual"
+                android:layout_below="@id/textView_up_email"
+                android:backgroundTint="@color/naranja"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/ic_email_login"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView_update_email_old"
+                android:textStyle="bold"
+                android:hint="Ingresar su Email"
+                android:textColorHint="@color/gray_claro"
+                android:textColor="@color/gray"
+                android:backgroundTint="@color/naranja"
+                android:padding="11dp"
+                android:textSize="16dp"
+                android:background="@drawable/border"
+                android:layout_below="@id/textView_up_email"
+                android:layout_marginStart="45dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView_update_email_verifica_pass"
+                android:text="Contraseña"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/naranja_claro"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_below="@id/textView_update_email_old"
+                android:layout_marginStart="45dp"/>
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/imgView_ver_pass"
+                android:layout_below="@id/textView_update_email_verifica_pass"
+                android:backgroundTint="@color/naranja"
+                android:background="@drawable/ic_hide_pwd"
+                android:layout_marginTop="5dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/edit_up_email_Verifica__pass"
+                android:hint="Ingresar Contraseña"
+                android:inputType="textPassword"
+                android:textColorHint="@color/gray_claro"
+                android:textColor="@color/gray"
+                android:backgroundTint="@color/naranja"
+                android:padding="11dp"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:layout_below="@id/textView_update_email_verifica_pass"
+                android:background="@drawable/border"
+                android:layout_marginStart="45dp"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_usuario_autenti"
+                android:text="Autentificar"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="70dp"
+                android:layout_marginLeft="70dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:textColor="@color/verde_claro"
+                android:textStyle="bold"
+                android:background="@drawable/border"
+                android:textSize="16dp"
+                android:layout_below="@id/edit_up_email_Verifica__pass"/>
+
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/progressBar"
+                style="?android:attr/progressBarStyleLarge"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:elevation="10dp"
+                android:visibility="gone"/>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/transparente"
+            android:layout_margin="15dp"
+            android:padding="20dp"
+            android:layout_below="@id/RL_email">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView_update_email_autenti"
+                android:text="Tu perfil todavia no esta autentificado o verificado"
+                android:textColor="#8B0000"
+                android:textStyle="bold"
+                android:textSize="30dp"
+                android:textAlignment="center"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView_update_email_nuevo"
+                android:text="Nuevo Email"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/naranja_oscuro"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_below="@+id/textView_update_email_autenti"
+                android:layout_marginStart="45dp"/>
+
+            <ImageView
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:id="@+id/imgView_email"
+                android:layout_below="@id/textView_update_email_nuevo"
+
+                android:backgroundTint="@color/naranja"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/ic_email_login"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/edit_up_email_nuevo"
+                android:hint="Ingresar nuevo Email"
+                android:inputType="textEmailAddress"
+                android:textColorHint="@color/gray_claro"
+                android:textColor="@color/gray"
+                android:backgroundTint="@color/naranja"
+                android:padding="11dp"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:layout_below="@id/textView_update_email_nuevo"
+                android:background="@drawable/border"
+                android:layout_marginStart="45dp"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_up_email"
+                android:text="Actualizar Email"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="70dp"
+                android:layout_marginLeft="70dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:textColor="@color/verde_claro"
+                android:textStyle="bold"
+                android:background="@drawable/border"
+                android:textSize="16dp"
+                android:layout_below="@id/edit_up_email_nuevo"/>
+
+
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

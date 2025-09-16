@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_inicio"
+            android:icon="@drawable/nav_inicio"
+            android:title="Mapa"/>
+        <item
+            android:id="@+id/nav_perfil"
+            android:icon="@drawable/nav_profile"
+            android:title="Perfil"/>
+        <item
+            android:id="@+id/nav_personas"
+            android:icon="@drawable/nav_personas"
+            android:title="Personas"/>
+        <item
+            android:id="@+id/nav_permisos"
+            android:icon="@drawable/nav_permisos"
+            android:title="Permisos"/>
+        <item
+            android:id="@+id/nav_razas"
+            android:icon="@drawable/nav_razas"
+            android:title="Razas"/>
+        <item
+            android:id="@+id/nav_temperaturas"
+            android:icon="@drawable/nav_temperaturas"
+            android:title="Temperaturas"/>
+
+        <item
+            android:id="@+id/nav_vientres"
+            android:icon="@drawable/nav_vientres"
+            android:title="Vientres"/>
+        <item
+            android:id="@+id/nav_grupos"
+            android:icon="@drawable/nav_grupos"
+            android:title="Grupos"/>
+        <item
+            android:id="@+id/nav_ganados"
+            android:icon="@drawable/nav_ganados"
+            android:title="Ganados"/>
+        <item
+            android:id="@+id/nav_dispositivos"
+            android:icon="@drawable/nav_dispositivos"
+            android:title="Dispositivos"/>
+        <item
+            android:id="@+id/nav_dashboard"
+            android:icon="@drawable/dashboard"
+            android:title="Dashboard"/>
+        <item
+            android:id="@+id/nav_auditoria"
+            android:icon="@drawable/nav_auditoria"
+            android:title="Auditoria"/>
+
+    </group>
+
+</menu>

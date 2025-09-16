@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="gray">#3E3B3B</color>
+    <color name="gray_oscuro">#201F1F</color>
+    <color name="gray_claro">#F4F1F1</color>
+    <color name="naranja">#FF5722</color>
+    <color name="naranja_claro">#FA7248</color>
+    <color name="verde">#4CAF50</color>
+    <color name="azul">#3F51B5</color>
+    <color name="aqua">#83F8F8</color>
+    <color name="verde_claro">#ADF45A</color>
+    <color name="rojo">#DE1212</color>
+    <color name="violeta">#8658D8</color>
+    <color name="lila">#C0A8EA</color>
+    <color name="crema">#F8F1C5</color>
+    <color name="gris">#9CFFFFFF</color>
+    <color name="transparente">#23FFFFFF</color>
+    <color name="naranja_oscuro">#FFA500</color> <!-- Naranja oscuro -->
+    <color name="verdeOscuro">#228B22</color> <!-- Verde oscuro -->
+    <color name="verde_oscuro">#024902</color> <!-- Verde oscuro -->
+    <color name="rojo_oscuro">#8B0000</color> <!-- Rojo oscuro -->
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="naranja_suave">#BD6A66</color>
+    <color name="celeste">#00BFFF</color>
+</resources>

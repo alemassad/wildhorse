@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Controladora.TemperaturaActivity"
+    android:orientation="vertical"
+    android:background="@drawable/caba13"
+    android:layout_margin="5dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Temperaturas"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@color/rojo_oscuro"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/txtid"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/naranja"
+            android:ems="10"
+            android:hint="Identificador"
+            android:inputType="number"
+            android:padding="10dp"
+            android:textAlignment="center"
+            android:textColor="@color/naranja"
+            android:textColorHint="@color/naranja"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnbus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/borderbutton"
+            android:text="Buscar" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/txtTempActual"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Temp Actual"
+            android:inputType="numberDecimal"
+            android:textColorHint="@color/naranja"
+            android:textColor="@color/naranja"
+            android:backgroundTint="@color/naranja"
+            android:padding="10dp"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:textAlignment="center" />
+
+        <Button
+            android:id="@+id/btnBusActual"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/borderbutton"
+            android:text="Buscar" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/txtTempMax"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Temp Maxima"
+            android:inputType="numberDecimal"
+            android:textColorHint="@color/naranja"
+            android:textColor="@color/naranja"
+            android:backgroundTint="@color/naranja"
+            android:padding="10dp"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:textAlignment="center" />
+
+        <!--<Button
+            android:id="@+id/btnbusMax"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Buscar" />-->
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/txtTempMin"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Temp Minima"
+            android:inputType="numberDecimal"
+            android:textAlignment="center"
+            android:textColorHint="@color/naranja"
+            android:textColor="@color/naranja"
+            android:backgroundTint="@color/naranja"
+            android:padding="10dp"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            tools:ignore="TouchTargetSizeCheck" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/txtestado"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Estado del animal"
+            android:inputType="textPersonName"
+            android:textAlignment="center"
+            android:padding="10dp"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:textColorHint="@color/naranja_claro"
+            android:textColor="@color/naranja"
+            android:backgroundTint="@color/naranja"
+            tools:ignore="TouchTargetSizeCheck" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnmod"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/borderbutton"
+            android:layout_weight="1"
+            android:backgroundTint="#819886FC"
+            android:text="Modificar" />
+
+        <Button
+            android:id="@+id/btnreg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/borderbutton"
+            android:layout_weight="1"
+            android:backgroundTint="#7E50E056"
+            android:text="Registrar" />
+
+        <Button
+            android:id="@+id/btneli"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/borderbutton"
+            android:backgroundTint="#99DE0A0A"
+            android:layout_weight="1"
+            android:text="Eliminar" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Listado Temperaturas"
+        android:textColor="#6D5151"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="380dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/white"
+                    android:background="#4EFF5722"
+                    android:text="  IdSensor      Temperatura Actual          Estado    "
+                    android:textSize="16sp"
+                    android:textStyle="bold|italic" />
+                <ListView
+                    android:id="@+id/lvDatos"
+                    android:layout_width="match_parent"
+                    android:layout_height="350dp"/>
+                    </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

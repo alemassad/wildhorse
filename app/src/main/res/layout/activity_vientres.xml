@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Controladora.VientresActivity"
+    android:orientation="vertical"
+    android:background="@drawable/caba10"
+    android:layout_margin="10dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:text="Vientres"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@color/rojo_oscuro"
+        android:textSize="34sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/txtid"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:hint="Identificador"
+            android:textColorHint="@color/gray_claro"
+            android:textColor="@color/gray"
+            android:backgroundTint="@color/naranja"
+            android:padding="10dp"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:background="@drawable/border"
+            android:inputType="number"
+            android:textAlignment="center" />
+
+        <Button
+            android:background="@drawable/borderbutton"
+            android:id="@+id/btnbus"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Buscar" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/textInicio"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:hint="Fecha de Preñado"
+            android:textColorHint="@color/gray_claro"
+            android:textColor="@color/gray"
+            android:backgroundTint="@color/naranja"
+            android:padding="10dp"
+            android:textStyle="bold"
+            android:background="@drawable/border"
+            android:textSize="18sp"
+            android:textAlignment="center"/>
+
+        <Button
+            android:id="@+id/fechaButton"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="Jan 01 2020"
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:background="@drawable/border"
+            style="?android:spinnerStyle"
+            android:drawableLeft="@drawable/baseline_calendar"
+            android:textAlignment="center"
+            android:onClick="openDatePicker"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/txtFechaParto"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Fecha de Parto "
+            android:textColorHint="@color/gray_claro"
+            android:textColor="@color/gray"
+            android:backgroundTint="@color/naranja"
+            android:padding="10dp"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:background="@drawable/border"
+            android:inputType="date"
+            android:textAlignment="center" />
+
+        <Button
+            android:id="@+id/fechaPartoButton"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="Dec 31 2025"
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            style="?android:spinnerStyle"
+            android:drawableLeft="@drawable/baseline_calendar"
+            android:background="@drawable/border"
+            android:textAlignment="center"
+            android:onClick="openDatePickerParto"/>
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/txtObservaciones"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Observaciones"
+            android:textColorHint="@color/gray_claro"
+            android:textColor="@color/gray"
+            android:backgroundTint="@color/naranja"
+            android:padding="10dp"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:background="@drawable/border"
+            android:inputType="text"
+            android:textAlignment="center" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/txtEstado"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Estado"
+            android:textColorHint="@color/gray_claro"
+            android:textColor="@color/gray"
+            android:backgroundTint="@color/naranja"
+            android:padding="10dp"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:background="@drawable/border"
+            android:inputType="text"
+            android:textAlignment="center" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnmod"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/borderbutton"
+            android:layout_weight="1"
+            android:backgroundTint="#819886FC"
+            android:text="Modificar" />
+
+        <Button
+            android:id="@+id/btnreg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/borderbutton"
+            android:layout_weight="1"
+            android:backgroundTint="#7E50E056"
+            android:text="Registrar" />
+
+        <Button
+            android:id="@+id/btneli"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/borderbutton"
+            android:backgroundTint="#62FF1A1A"
+            android:layout_weight="1"
+            android:text="Eliminar" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Listado de Vientres"
+        android:textAlignment="center"
+        android:textColor="@color/rojo_oscuro"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/white"
+        android:background="#4EFF5722"
+        android:text=" id   FechaInicio   FechaParto    Observacion        Estado"
+        android:textSize="16sp"
+        android:textStyle="bold|italic" />
+
+    <ListView
+        android:id="@+id/lvDatos"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+</LinearLayout>

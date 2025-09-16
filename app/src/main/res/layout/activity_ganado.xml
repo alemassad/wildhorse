@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Controladora.GanadoActivity"
+    android:orientation="vertical"
+    android:background="@drawable/caba7">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="5dp"
+            android:background="#2B3E3B3B">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ganados"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textSize="34sp"
+                android:textStyle="bold"
+                android:padding="5dp"
+                android:textColor="@color/rojo_oscuro" />
+
+            <TextView
+                android:id="@+id/textView_id_ganado"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ID del ganado"
+                android:textAlignment="center"
+                android:textColor="@color/naranja"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/txtid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:hint="Identificador"
+                    android:inputType="number"
+                    android:textColorHint="@color/gray_claro"
+                    android:textColor="@color/gray"
+                    android:backgroundTint="@color/naranja"
+                    android:padding="5dp"
+                    android:textStyle="bold"
+                    android:background="@drawable/border"
+                    android:textSize="15sp"
+                    android:textAlignment="center"/>
+
+                <Button
+                    android:id="@+id/btnbus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Buscar"
+                    android:textColor="@color/naranja_oscuro"
+                    android:background="@drawable/borderbutton"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView_sexo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sexo"
+                android:textAlignment="center"
+                android:textColor="@color/naranja"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/txtSexo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Sexo"
+                android:inputType="text"
+                android:textColorHint="@color/gray_claro"
+                android:textColor="@color/gray"
+                android:backgroundTint="@color/naranja"
+                android:padding="5dp"
+                android:textStyle="bold"
+                android:background="@drawable/border"
+                android:textSize="15sp"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:id="@+id/textView_razas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Selecciona una Raza"
+                android:textAlignment="center"
+                android:textColor="@color/naranja"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_marginTop="3dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="3dp">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="235dp"
+                    android:layout_height="match_parent"
+                    android:textAlignment="center"
+                    app:cardBackgroundColor="#6222FF9C"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="@dimen/cardview_default_radius">
+
+                    <Spinner
+                        android:id="@+id/spinner_raza"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/gray"
+                        android:fadeScrollbars="true"
+                        android:prompt="@string/seleccionar_raza"
+                        android:textAlignment="center" />
+                </androidx.cardview.widget.CardView>
+
+                <EditText
+                    android:id="@+id/txtRaza"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Raza"
+                    android:ems="20"
+                    android:inputType="text"
+                    android:textColorHint="@color/gray_claro"
+                    android:backgroundTint="#A1FF5722"
+                    android:padding="5dp"
+                    android:textStyle="bold"
+                    android:background="@drawable/border"
+                    android:textSize="15sp"
+                    android:textAlignment="center"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#653E3B3B">
+
+            <TextView
+                android:id="@+id/textView_dispositivo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="¿Tiene dispositivo?"
+                android:textAlignment="center"
+                android:textColor="@color/naranja"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+
+                <RadioGroup
+                    android:id="@+id/radioGroup_dispositivo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    android:textAlignment="center">
+                    <RadioButton
+                        android:id="@+id/rbSidispositivo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="150dp"
+                        android:backgroundTint="@color/white"
+                        android:checked="true"
+                        android:text="SI"
+                        android:textColor="@color/naranja_oscuro"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+                    <RadioButton
+                        android:id="@+id/rbNodispositivo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="80dp"
+                        android:text="NO"
+                        android:textColor="@color/naranja_oscuro"
+                        android:textSize="16sp"
+                        android:textStyle="bold"/>
+                </RadioGroup>
+
+            <TextView
+                android:id="@+id/textView_vientre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="¿Tiene vientre?"
+                android:textAlignment="center"
+                android:textColor="@color/naranja"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_marginTop="3dp"/>
+
+                <RadioGroup
+                    android:id="@+id/radioGroup_vientre"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    android:textAlignment="center">
+                    <RadioButton
+                        android:id="@+id/rbSi_vientre"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="150dp"
+                        android:backgroundTint="@color/white"
+                        android:checked="true"
+                        android:text="SI"
+                        android:textColor="@color/naranja_oscuro"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+                    <RadioButton
+                        android:id="@+id/rbNo_vientre"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="80dp"
+                        android:text="NO"
+                        android:textColor="@color/naranja_oscuro"
+                        android:textSize="16sp"
+                        android:textStyle="bold"/>
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView_temperatura"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Temperatura"
+                android:textAlignment="center"
+                android:textColor="@color/naranja"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_marginTop="3dp"/>
+
+                <EditText
+                    android:id="@+id/txtTemperatura"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Temperatura "
+                    android:inputType="number"
+                    android:textColorHint="@color/gray_claro"
+                    android:textColor="@color/gray"
+                    android:backgroundTint="@color/naranja"
+                    android:padding="5dp"
+                    android:textStyle="bold"
+                    android:background="@drawable/border"
+                    android:textSize="15sp"
+                    android:textAlignment="center"/>
+
+            <TextView
+                android:id="@+id/textView_estado"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Estado"
+                android:textAlignment="center"
+                android:textColor="@color/naranja"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_marginTop="3dp"/>
+
+            <EditText
+                android:id="@+id/txtestado"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Estado"
+                android:inputType="text"
+                android:textColorHint="@color/gray_claro"
+                android:textColor="@color/gray"
+                android:backgroundTint="@color/naranja"
+                android:padding="5dp"
+                android:textStyle="bold"
+                android:background="@drawable/border"
+                android:textSize="15sp"
+                android:textAlignment="center"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp">
+
+                <Button
+                    android:id="@+id/btnmod"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/borderbutton"
+                    android:layout_weight="1"
+                    android:backgroundTint="#819886FC"
+                    android:text="Modificar" />
+
+                <Button
+                    android:id="@+id/btnreg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/borderbutton"
+                    android:layout_weight="1"
+                    android:backgroundTint="#7E50E056"
+                    android:text="Registrar" />
+
+                <Button
+                    android:id="@+id/btneli"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/borderbutton"
+                    android:backgroundTint="#62FF1A1A"
+                    android:layout_weight="1"
+                    android:text="Eliminar" />
+            </LinearLayout>
+
+
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Listado de Ganados"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/rojo_oscuro"/>
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="       Id       Sexo          Raza            Estado"
+                android:background="#7EFF5722"
+                android:textAlignment="textStart"
+                android:textSize="7sp"
+                android:textStyle="bold"
+                android:textColor="@color/white" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ListView
+                        android:id="@+id/lvDatos"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:divider="@android:color/white"
+                        android:dividerHeight="1dp"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="10dp"
+                        android:layout_margin="8dp"
+                        android:scrollbars="vertical"
+                        android:background="#34FF5722"
+                        android:textAlignment="center"/>
+                </LinearLayout>
+        </LinearLayout>
+</LinearLayout>
+        <!--<Button
+            android:id="@+id/btnBusSexo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Buscar" />-->
+
+
+        <!--<Button
+            android:id="@+id/btnbusRaza"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Buscar" />-->
+
+
+    <!--<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="252dp"
+            android:layout_height="43dp" >
+
+            <Spinner
+                android:id="@+id/spinner_dispositivo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:prompt="@string/seleccionar_dispositivo"/>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>-->
+
+    <!--<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/txtDispositivo"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Dispositivo"
+            android:inputType="textPersonName"
+            android:textAlignment="center"
+            tools:ignore="TouchTargetSizeCheck" />
+
+    </LinearLayout>-->
+
+
+    <!--<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/txtVientre"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Vientre "
+            android:inputType="textPersonName"
+            android:textAlignment="center"
+            tools:ignore="TouchTargetSizeCheck" />
+
+    </LinearLayout>-->
+

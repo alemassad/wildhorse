@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Sesion.DeleteProfileActivity"
+    android:background="@drawable/caba3">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="50dp"
+            android:background="@color/transparente">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView_delete_usuario_head"
+                android:text="Eliminar Perfil de usuario"
+                android:textAlignment="center"
+                android:textSize="28dp"
+                android:textStyle="bold"
+                android:textColor="#902122"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView_delete_usuario"
+                android:text="Contraseña"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/naranja"
+                android:textStyle="bold"
+                android:backgroundTint="#A1FFFFFF"
+                android:textSize="20dp"
+                android:layout_below="@id/textView_delete_usuario_head"
+                android:layout_marginStart="45dp"/>
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/imgView_ver_pass"
+                android:layout_below="@id/textView_delete_usuario"
+                android:backgroundTint="@color/naranja"
+                android:background="@drawable/ic_hide_pwd"
+                android:layout_marginTop="3dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/edit_delete_usuario_pass"
+                android:hint="Ingresar Contraseña"
+                android:inputType="textPassword"
+                android:textColorHint="@color/naranja_oscuro"
+                android:textColor="@color/gray"
+                android:backgroundTint="#60FFFFFF"
+                android:padding="11dp"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:layout_below="@id/textView_delete_usuario"
+                android:background="@drawable/border"
+                android:layout_marginStart="45dp"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_delete_usuario_autenti"
+                android:text="Autentificar"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="70dp"
+                android:layout_marginLeft="70dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:textColor="@color/verde_claro"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:background="@drawable/border"
+                android:layout_below="@id/edit_delete_usuario_pass"/>
+
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/progressBar"
+                style="?android:attr/progressBarStyleLarge"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:elevation="10dp"
+                android:visibility="gone"/>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:padding="30dp"
+            android:background="@color/transparente">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView_delete_usuario_autenti"
+                android:text="Tu perfil todavia no esta autentificado o verificado"
+                android:padding="6dp"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:textColor="#902122"
+                android:textAlignment="center"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_delete_usuario"
+                android:text="Borrar Perfil"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="70dp"
+                android:layout_marginLeft="70dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:textColor="@color/verde_claro"
+                android:textStyle="bold"
+                android:background="@drawable/border"
+                android:textSize="16dp"
+                android:layout_below="@id/textView_delete_usuario_autenti"/>
+
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</ScrollView>

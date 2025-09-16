@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">WildHorse</string>
+    <string name="open_navigation_drawer">Open</string>
+    <string name="close_navigation_drawer">Close</string>
+    <string name="title_activity_maps">MapsActivity</string>
+    <string name="seleccionar_grupo">Seleccionar Grupo</string>
+    <string name="seleccionar_raza">Seleccionar Raza</string>
+    <string name="seleccionar_dispositivo">Seleccionar Dispositivo</string>
+    <string name="atualizar_email">Atualizar Email</string>
+</resources>

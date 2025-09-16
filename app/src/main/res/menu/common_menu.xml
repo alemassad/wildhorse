@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".UserProfileActivity">
+
+    <item android:title="Mapa"
+        android:id="@+id/menu_mapa"/>
+    <item android:title="Actualizar"
+        android:id="@+id/menu_refresh"
+        android:alphabeticShortcut="r"/>
+    <item android:title="Actualizar Perfil"
+        android:id="@+id/menu_update_profile"/>
+    <item android:title="@string/atualizar_email"
+        android:id="@+id/menu_update_email"/>
+    <item android:title="Cambiar Password"
+        android:id="@+id/menu_change_password"/>
+    <item android:title="Eliminar Perfil"
+        android:id="@+id/menu_delete_profile"/>
+    <item android:title="Cerrar Sesión"
+        android:id="@+id/menu_logout"/>
+
+</menu>

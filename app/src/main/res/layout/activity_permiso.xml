@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_permisos"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Controladora.PermisoActivity"
+    android:background="@drawable/caba8">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="10dp">
+
+            <TextView
+                android:id="@+id/textView_permiso"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Permisos"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textSize="34sp"
+                android:textColor="@color/rojo_oscuro"
+                android:textStyle="bold"
+                android:padding="20dp"/>
+
+            <TextView
+                android:id="@+id/textView_id_accion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Id Accion"
+                android:textAlignment="center"
+                android:textColor="@color/naranja"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout_id_accion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/txtid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:hint="Id Accion"
+                    android:inputType="number"
+                    android:textAlignment="center"
+                    android:textColorHint="@color/gray_claro"
+                    android:textColor="@color/gray"
+                    android:backgroundTint="@color/naranja"
+                    android:padding="10dp"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:background="@drawable/border" />
+
+                <Button
+                    android:id="@+id/btnbus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Buscar"
+                    android:background="@drawable/borderbutton"
+                    android:textStyle="bold"
+                    android:padding="8dp"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView_accion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Accion"
+                android:textAlignment="center"
+                android:textColor="@color/naranja"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout_accion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <EditText
+                    android:id="@+id/txtAccion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:hint="Accion"
+                    android:inputType="text"
+                    android:textColorHint="@color/gray_claro"
+                    android:textColor="@color/gray"
+                    android:backgroundTint="@color/naranja"
+                    android:padding="10dp"
+                    android:textSize="18dp"
+
+                    android:textAlignment="center"
+                    android:textStyle="bold"
+                    android:background="@drawable/border"/>
+
+                <Button
+                    android:id="@+id/btnbusAccion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/borderbutton"
+                    android:textStyle="bold"
+                    android:text="Buscar"
+                    android:padding="8dp"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView_descripcion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linearLayout_id_accion"
+                android:text="Descripción"
+                android:textAlignment="center"
+                android:textColor="@color/naranja"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/txtDescripcion"
+                android:layout_width="247dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/border"
+                android:backgroundTint="@color/naranja"
+                android:hint="Descripción"
+                android:inputType="text"
+                android:padding="10dp"
+                android:textAlignment="center"
+                android:textColor="@color/gray"
+                android:textColorHint="@color/gray_claro"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/linear_Layout_botones"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp">
+
+                <Button
+                    android:id="@+id/btnmod"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/borderbutton"
+                    android:layout_weight="1"
+                    android:backgroundTint="#819886FC"
+                    android:text="Modificar" />
+
+                <Button
+                    android:id="@+id/btnreg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/borderbutton"
+                    android:layout_weight="1"
+                    android:backgroundTint="#7E50E056"
+                    android:text="Registrar" />
+
+                <Button
+                    android:id="@+id/btneli"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/borderbutton"
+                    android:backgroundTint="#62FF1A1A"
+                    android:layout_weight="1"
+                    android:text="Eliminar" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout_titulo_tabla"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linear_Layout_botones">
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Tipos de Permisos"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:textSize="34sp"
+                    android:textColor="#A91111"
+                    android:textStyle="bold"
+                    android:padding="20dp"/>
+            </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ListView
+                            android:id="@+id/lvDatos"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:divider="@android:color/white"
+                            android:dividerHeight="1dp"
+                            android:padding="8dp"
+                            android:layout_margin="8dp"
+                            android:scrollbars="vertical"
+                            android:background="#65F0CD87"/>
+                    </LinearLayout>
+
+        </LinearLayout>
+
+</LinearLayout>

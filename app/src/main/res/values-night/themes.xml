@@ -1,0 +1,35 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.LookCow" parent="Theme.AppCompat.DayNight.DarkActionBar">
+        <!-- Customize your night theme here. -->
+        <item name="colorPrimary">@color/naranja_oscuro</item> <!-- Color primario para modo oscuro -->
+        <item name="colorSecondary">@color/verde_oscuro</item> <!-- Color secundario para modo oscuro -->
+        <item name="colorAccent">@color/rojo_oscuro</item> <!-- Color de acento para modo oscuro -->
+    </style>
+
+    <!-- Base 2 application theme. -->
+    <style name="Base.Theme.LookCowMapa" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <!-- Customize your night theme here. -->
+        <item name="colorPrimary">@color/rojo_oscuro</item> <!-- Color primario para modo oscuro -->
+        <item name="colorSecondary">@color/verde_oscuro</item> <!-- Color secundario para modo oscuro -->
+        <item name="colorAccent">@color/naranja_oscuro</item> <!-- Color de acento para modo oscuro -->
+    </style>
+
+    <!-- Tema principal -->
+    <style name="Theme.LookCow" parent="Base.Theme.LookCow" />
+
+    <!-- Tema personalizado para AlertDialog en modo oscuro -->
+    <style name="CustomAlertDialogTheme" parent="Theme.AppCompat.DayNight.Dialog.Alert">
+        <item name="colorPrimary">#FF4444</item> <!-- Color primario (rojo más suave) -->
+        <item name="colorAccent">#FF4444</item> <!-- Color de acento (rojo más suave) -->
+        <item name="android:windowBackground">@color/gray_oscuro</item> <!-- Fondo oscuro del diálogo -->
+        <item name="android:textColorPrimary">#FFFFFF</item> <!-- Color del texto principal (blanco) -->
+    </style>
+    <style name="ButtonStyle" parent="Widget.AppCompat.Button">
+        <item name="android:background">@drawable/borderbutton</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:padding">12dp</item>
+    </style>
+</resources>

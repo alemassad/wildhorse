@@ -1,0 +1,49 @@
+{
+  "project_info": {
+    "project_number": "30778827147",
+    "firebase_url": "https://lookcow-b911a-default-rtdb.firebaseio.com",
+    "project_id": "lookcow-b911a",
+    "storage_bucket": "lookcow-b911a.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:30778827147:android:07cad1201cae931a9f0f8e",
+        "android_client_info": {
+          "package_name": "com.example.lookcow"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDjnBOPEDbRDcw82Ezc1ceElxJr9dACpBA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:30778827147:android:07cad1201cae931a9f0f8e",
+        "android_client_info": {
+          "package_name": "com.example.lookcow"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDjnBOPEDbRDcw82Ezc1ceElxJr9dACpBA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

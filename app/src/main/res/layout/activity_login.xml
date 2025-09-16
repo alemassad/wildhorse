@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/caballo7"
+    tools:context=".Sesion.LoginActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:padding="20dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView_login"
+            android:text="LOGIN"
+            android:textSize="32dp"
+            android:textColor="@color/rojo"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"/>
+
+        <ImageView
+            android:id="@+id/imageView_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="146dp"
+            android:layout_below="@+id/textView_login"
+            android:layout_centerHorizontal="true"
+            android:adjustViewBounds="true"
+            android:maxWidth="180dp"
+            android:src="@drawable/logocaballo" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView_loginHead"
+            android:text="WildHorse"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textAlignment="center"
+            android:textSize="18dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/imageView_logo"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView_login_email"
+            android:layout_marginTop="30dp"
+            android:text="Email"
+            android:textColor="@color/rojo"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_below="@id/textView_loginHead"
+            android:layout_marginStart="45dp"/>
+
+        <ImageView
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:id="@+id/imgView_email"
+            android:layout_below="@id/textView_login_email"
+            android:layout_marginTop="5dp"
+            android:backgroundTint="@color/naranja"
+            android:background="@drawable/ic_email_login"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText_login_email"
+            android:inputType="textEmailAddress"
+            android:hint="Ingrese Email"
+            android:textColorHint="@color/gray_claro"
+            android:textColor="@color/gray"
+            android:backgroundTint="@color/naranja"
+            android:padding="10dp"
+            android:textSize="12dp"
+            android:textStyle="bold"
+            android:background="@drawable/border"
+            android:layout_below="@id/textView_login_email"
+            android:layout_marginStart="45dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView_login_pass"
+            android:layout_marginTop="30dp"
+            android:text="Contraseña"
+            android:textColor="@color/rojo"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_below="@id/editText_login_email"
+            android:layout_marginStart="45dp"/>
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/imgView_ver_pass"
+            android:layout_below="@id/textView_login_pass"
+            android:background="@drawable/ic_hide_pwd"
+            android:backgroundTint="@color/naranja"
+            android:layout_marginTop="5dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText_login_pass"
+            android:inputType="textPassword"
+            android:hint="Ingrese Contraseña"
+            android:textColorHint="@color/gray_claro"
+            android:textColor="@color/gray"
+            android:backgroundTint="@color/naranja"
+            android:padding="10dp"
+            android:textSize="12dp"
+            android:textStyle="bold"
+            android:background="@drawable/border"
+            android:layout_below="@id/textView_login_pass"
+            android:layout_marginStart="45dp" />
+
+        <Button
+            android:id="@+id/button_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editText_login_pass"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="70dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+           android:background="@drawable/border"
+            android:textStyle="bold"
+            android:textSize="16dp"
+            android:text="Loguearse" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/button_register"
+            android:text="Registrarse"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/button_login"
+            android:layout_marginLeft="70dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:background="@drawable/border"
+            android:textStyle="bold"
+            android:textSize="16dp"
+            android:layout_marginRight="70dp"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/button_forgot_pass"
+            android:text="Recuperar Clave"
+            android:layout_marginTop="15dp"
+            android:layout_below="@id/button_register"
+            android:layout_marginLeft="70dp"
+            android:paddingTop="20dp"
+            android:paddingBottom="5dp"
+            android:backgroundTint="#C3FFEB3B"
+            android:textColor="@color/purple_700"
+            android:textStyle="italic"
+            android:textSize="16dp"
+            android:layout_marginRight="70dp"/>
+
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/progressBar_login"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:elevation="10dp"
+            android:visibility="gone"/>
+
+    </RelativeLayout>
+
+</ScrollView>
